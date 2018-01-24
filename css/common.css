@@ -1,0 +1,41 @@
+body {
+  width: 300px;
+  background: #eeeeee;
+  font-family: 'Roboto', sans-serif;
+  margin: 0 !important;
+}
+
+.nav-bar {
+  width: 100%;
+  height: 50px;
+  margin: 0 0 3px 0;
+  background: #c62828;
+  display: flex;
+  flex-direction: row;
+  box-shadow: 2px 2px 2px #00000055;
+}
+
+.nav-bar > .app-name {
+  color: white;
+  font-size: 16pt;
+  text-align: center;
+  font-weight: 500;
+  float: none;
+  margin: auto;
+  user-select: none;
+}
+
+.nav-bar > .icon {
+  color: #eeeeee;
+  font-size: 36px;
+  padding: 7px;
+  cursor: pointer;
+}
+
+.nav-bar > .icon-right {
+  float: left;
+}
+
+.nav-bar > .icon-left {
+  float: right;
+}

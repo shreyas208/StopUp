@@ -1,0 +1,84 @@
+#content {
+  width: 100%;
+  max-height: 500px;
+  overflow-y: scroll;
+  margin: 0;
+  background: #eeeeee;
+  padding: 1px 0;
+}
+
+.stops-card {
+  margin: 14px;
+  background: white;
+  box-shadow: 0px 2px 5px #00000055;
+  border-radius: 6px;
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  color: #555555;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: default;
+}
+
+.stops-card > .progress {
+  margin: 5px 0 5px 0;
+}
+
+.stops-card > .title {
+  color: #8e0000;
+  font-weight: 500;
+  font-size: 13pt;
+  margin-bottom: 3px;
+}
+
+.stops-card > .search-bar {
+  color: #8e0000;
+  font-weight: 400;
+  font-size: 12pt;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  margin-bottom: 5px;
+}
+
+.search-bar > i {
+  width: 24px;
+  height: 24px;
+  margin-right: 6px;
+}
+
+#search-field {
+  margin: 0;
+  width: auto;
+  height: 2rem;
+  font-size: 12pt;
+}
+
+#search-field:focus {
+  border-bottom: 1px solid #8e0000;
+  box-shadow: 0 1px 0 0 #8e0000;
+}
+
+#search > .stops {
+  padding-left: 30px;
+  display: none;
+}
+
+#nearby > .stops {
+  display: none;
+}
+
+.stops-card > .stops > .stop {
+  margin-top: 3px;
+  color: #444444;
+  font-size: 12pt;
+  cursor: pointer;
+}
+
+.stops-card > .stops > .stop.none {
+  cursor: default;
+}

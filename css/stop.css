@@ -1,0 +1,67 @@
+.nav-bar.custom > .app-name {
+  font-size: 13pt;
+}
+
+.icon-right::after {
+  content: "star_border";
+}
+.icon-right.favorite::after {
+  content: "star";
+}
+.icon-right.favorite {
+  color: gold;
+}
+
+#content {
+  width: 100%;
+  height: 450px;
+  margin: 0;
+  background: #eeeeee;
+  padding: 12px;
+  cursor: default;
+  overflow-y: scroll;
+}
+
+#content > .progress {
+  margin: 0;
+}
+
+#content > .departures {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+#content > .departures > .departure {
+  margin-bottom: 12px;
+  color: #444444;
+  background-color: white;
+  font-size: 13pt;
+  padding: 4px 8px;
+  box-shadow: 0px 2px 4px #00000055;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.departure > .route {
+  float: left;
+  margin-right: auto;
+}
+
+.departure.istop {
+  border-left: 5px solid #f1592a;
+}
+
+.departure > .istop {
+  height: 16px;
+  width: 16px;
+  margin-left: 3px;
+  margin-right: 6px;
+}
+
+.departure > .time {
+  float: right;
+  font-weight: 500;
+}
